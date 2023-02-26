@@ -4,7 +4,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 
-## Introduction
+## 소개
 
 _With Rocky Linux emerging as a major RHEL-compatible distribution, this is an exciting time in the open source community. Rocky Linux’s [mission](https://rockylinux.org/community-charter/) is to provide companies and individuals with a **stable foundation of open source software** for their enterprise and HPC needs. We are here to support that mission with excellent documentation._ 
 
@@ -24,7 +24,7 @@ We welcome anyone who wants to be part of this mission. No specific degree, year
 
 _Our standards for Rocky documentation._
 
-### Style Guide
+### 스타일 가이드
 
 The RL [Style Guide](https://docs.rockylinux.org/guides/contribute/style_guide/) outlines standards for the wording within your document. 
 
@@ -42,17 +42,17 @@ That said, RL Documentation uses Markdown as the standard. It is easy to learn a
 As you become a regular contributor, you’ll need to create a **local repository**. See our [guide](https://docs.rockylinux.org/guides/contribute/beginners) for how to install a Markdown editor and create a local repository on your home computer.
 
 
-## Contribution Process
+## 기여 절차
 
 _The actual process of reporting an issue, revising, or creating a doc. Please see special notes afterward about translations, links, and meta content._
 
 
-### Report an issue
+### 이슈 보고하기
 
 Maybe you’ve found a broken link or incorrect information while exploring the Rocky docs. This is called an **issue**, and we want to know about it. You can mention it on the Mattermost Documentation channel, or visit GitHub and make a proper issue report. GitHub has [a handy guide](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue) for how to create an issue.
 
 
-### Submit an update
+### 업데이트 
 
 _Add a missing word, correct an error, clarify a confusing bit of text. You won’t break anything because someone will review your contribution before it goes live. Here is the basic process._
 
