@@ -86,7 +86,7 @@ _Add a missing word, correct an error, clarify a confusing bit of text. You won�
 
     Click the green button that says Create Pull Request, which sends it to the RL documentation team for review.
 
-6. Wait
+6. 대기
 
     Once the RL team reviews your request, they will respond in one of three ways.
 
@@ -108,7 +108,7 @@ For more than a word or two of occasional edits, we recommend that you [setup a 
 Advanced users may wish to create a complete documentation server on your local Linux workstation or VM. We have guides to set that up with [Docker](https://docs.rockylinux.org/guides/contribute/rockydocs_web_dev/) or [LXD](https://docs.rockylinux.org/guides/contribute/mkdocs_lsyncd/). We also have a [fast documentation system](https://docs.rockylinux.org/guides/contribute/local_docs/) with special caveats if you are using Python on the same server.
 
 
-### Submit a new document
+### 새문서 제출 하기
 
 _Rocky Linux documentation includes guides, books, labs, and [gemstones](https://docs.rockylinux.org/gemstones/). Your original contributions are welcome in any of these categories._
 
@@ -145,7 +145,7 @@ tags:
 To add more advanced elements to your Markdown-formatted document beyond text, visit the [formatting guide](https://docs.rockylinux.org/guides/contribute/rockydocs_formatting/). This covers Admonitions, Tables, Quotes, and more.
 
 
-#### Contribute
+#### 기여하기
 
 The process for [submitting original content](https://docs.rockylinux.org/guides/contribute/createnew)  is similar to updating an existing document from your local repository. Create a new document within your Markdown editor, Commit it to your GitHub repository, then submit a Pull Request to merge into the main branch of the repository. The documentation leads will decide where the new document will live.
 
@@ -153,7 +153,7 @@ The process for [submitting original content](https://docs.rockylinux.org/guides
 ## Special Notes
 
 
-### Links
+### 링크들
 
 Links can be internal (other docs within our domain), external (publicly hosted URLs), or lab-based (used as examples within your document).
 
@@ -176,7 +176,7 @@ To help lab-based URLs pass our automatic URL checker, we have created a list of
 * localhost
 
 
-### Translation 
+### 번역 
 
 
 #### CrowdIn
@@ -193,7 +193,7 @@ However, unless you modify the source document, please do not modify the meta co
 The place where we do want to acknowledge you is in the all-contributors section--at the bottom of this page. This is a list of everyone who has been part of this documentation project, whether creating content, spotting and fixing errors, or translating. Translators, you may add yourself (or [request to be added](https://chat.rockylinux.org/rocky-linux/channels/documentation)) here. We appreciate your contribution! 
 
 
-## Communication channel
+## 대화 
 
 _For reporting issues, asking questions, getting support, and getting to know the documentarians._
 
