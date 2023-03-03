@@ -2,7 +2,7 @@
 title: Learning Linux With Rocky
 ---
 
-# Learning Linux with Rocky
+# Rocky 리눅스 배우기
 
 The Administrator's Guide is a collection of educational documents focused on System Administrators. They can be used by future System Administrators trying to get up to speed, by current System Administrators who would like a refresher, or by any Linux user who'd like to learn more about the Linux environment, commands, processes, and more. Like all documents of this type, it will evolve and update over time.
 
@@ -14,9 +14,9 @@ The VI Text Editor deserves its own chapter. While Linux comes with many editors
 
 We can then get into the deep functioning of Linux to discover how the system addresses:
 
-* User Management
-* File Systems
-* Process Management
+* 사용자 관리
+* 파일 관리
+* 프로세스 관리
 
 Backup and Restoration is essential info for the System Administrator. Linux comes with many software solutions to enhance backups (rsnapshot, lsyncd, etcetera.). It is valuable to know the essential components of the backup that exist within the operating system. We investigate two tools: `tar` and the less widespread `cpio` in this chapter.
 
