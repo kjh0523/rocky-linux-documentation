@@ -5,12 +5,12 @@ contributors: Steven Spencer
 updated: 07-14-2022
 ---
 
-# Installing Rocky Linux 9
+# Rocky 리눅스 9 설치하기
 
 This is a detailed guide for installing a 64-bit version of the Rocky Linux distribution on a stand-alone system.  We will be performing a server class install. We will step through the installation and customization steps in the following sections.
 
 
-## OS Installation Prerequisites
+## 운영체제 설치 선행 조건
 
 First, you need to download the ISO to be used for this installation of Rocky Linux.
 
@@ -38,7 +38,7 @@ For example, `Rocky-9.0-x86_64-minimal.iso`
 
     Rocky project web page has a listing of several mirrors located all over the world. Whenever possible, you should choose the mirror geographically closest to you. The list of official mirrors can be found [here](https://mirrors.rockylinux.org/mirrormanager/mirrors).
 
-## Verifying the Installer ISO File
+## 설치 ISO 파일 검증하기
 
 If you've downloaded the Rocky Linux ISO(s) on an existing Linux distribution, you can use the `sha256sum` utility to verify that file(s) you downloaded are not corrupt. We will show an example of how to verify the `Rocky-9.0-x86_64-minimal.iso` file by checking its checksum.
 
@@ -60,7 +60,7 @@ This will check the integrity of the ISO file downloaded previously, provided th
 Rocky-9.0-x86_64-minimal.iso: OK
 ```
 
-## The Installation
+## 설치
 
 !!! Tip
 
@@ -86,9 +86,9 @@ After the media check runs to completion and the media is successfully verified 
 
 Select the language you want to use to perform the installation in this screen. For this guide, we select *English (United States)*. Then click the <kbd>Continue</kbd> button.
 
-## Installation Summary
+## 설치 요약
 
-The *Installation Summary* screen is an all-in-one area where you make the important decisions about the system to be installed.
+The *설치 요약* screen is an all-in-one area where you make the important decisions about the system to be installed.
 
 The screen is roughly divided into the following sections:
 
@@ -99,11 +99,11 @@ The screen is roughly divided into the following sections:
 
 We will delve into each of these sections next and make changes where necessary.
 
-### Localization Section
+### 현지화 부문
 
 This section is used for customizing items related to the geographic locality of the system. This includes – Keyboard, Language Support, Time and Date.
 
-#### Keyboard
+#### 키보드
 
 On our demo system in this guide, we accept the default value (*English US*) and make no changes.
 
@@ -111,13 +111,13 @@ However if you need to make any changes here, from the *Installation Summary* sc
 
 Click <kbd>Done</kbd> when you are finished with this screen.
 
-#### Language Support
+#### 언어 지원
 
 The <kbd>Language Support</kbd> option on the *Installation Summary* screen enables you to specify support for additional languages that you may need.
 
 We will accept the default value - **English (United States)** and make no change, click <kbd>Done</kbd>.
 
-#### Time & Date
+#### 날자 및 시간
 
 Click the <kbd>Time & Date</kbd> option on the main *Installation Summary* screen to bring up another screen that will allow you to select the time zone in which the machine is located. Scroll through the list of regions and cities and select the area closest to you.
 
@@ -125,11 +125,11 @@ Depending on your installation source, the *Network Time* option could be set to
 
 Click <kbd>Done</kbd> after making any changes.
 
-### Software Section
+### 소프트웨어 부문
 
 Under the *Software* section of the *Installation Summary* screen, you can select the installation source as well as additional packages (applications) that get installed.
 
-#### Installation Source
+#### 설치 원본
 
 Since we are performing our installation using a Rocky Linux 9 ISO image, you will notice that *Local Media* is automatically specified under the Installation Source section of the main *Installation Summary* screen. We'll accept the preset defaults.
 
@@ -137,22 +137,22 @@ Since we are performing our installation using a Rocky Linux 9 ISO image, you wi
 
     The installation Source area is where you can opt to perform a network based installation (for example if you are using the Rocky Linux boot ISO - Rocky-9.0-x86_64-boot.iso). For a network based installation, you need to first ensure that a network adapter on the target system is properly configured, and is able to reach the internet.  To perform a network based installation, click on `Installation Source` and then select the `On the network` radio button. Once selected, choose `https` as the protocol and type the following URL in the text field `download.rockylinux.org/pub/rocky/9/BaseOS/x86_64/os`.   Click `Done`.
 
-#### Software Selection
+#### 소프트웨어 선택
 
 Clicking the <kbd>Software Selection</kbd> option on the main *Installation Summary* screen presents you with the section of the installation where you can pick the exact software packages that get installed on the system. The software selection area is divided into :
 
-- **Base Environment** : Minimal Install and Custom Operating System
+- **기본 환경** : Minimal Install and Custom Operating System
 - **Additional software for Selected Environment** : Selecting a Base Environment on the left side presents a variety of related additional software that can be installed for the given environment on the right side. Please note that this is only applicable if you were installing from a full Rocky Linux 9 DVD or if you have additional repositories configured.
 
 Select the *Minimal Install* (Basic functionality) option.
 
 Click <kbd>Done</kbd> at the top of the screen.
 
-### System Section
+### 시스템 부문
 
 The System section of the *Installation Summary* screen is used for customizing and making changes to things related to the underlying hardware of the target system. This is where you create your hard drive partitions or volumes, specify the file system to be used, specify the network configuration, enable/disable KDUMP or select a Security Profile.
 
-#### Installation Destination
+#### 설치 대상
 
 From the *Installation Summary* screen, click the <kbd>Installation Destination</kbd> option. This takes you to the corresponding task area.
 
@@ -164,7 +164,7 @@ Then click <kbd>Done</kbd> at the top of the screen.
 
 Once the installer determines that you have a usable disk, you will be returned to the *Installation Summary* screen.
 
-### Network & Host Name
+### 네트워크와 호스트 이름
 
 The final task of the installation procedure deals with network configuration, where you can configure or tweak network-related settings for the system.
 
@@ -195,11 +195,11 @@ Click <kbd>Done</kbd> to return to the main *Installation Summary* screen.
 
     Pay attention to the IP address of the server in this section of this installer. If you don’t have physical or easy console access to the system, this information will come in handy later on when you need to connect to the server to continue working on it after the OS installation is completed.
 
-### User Settings Section
+### 사용자 설정 부문
 
 This section can be used for creating a password for the `root` user account and also for creating new administrative or non-administrative accounts.
 
-#### Root Password
+#### 루트 비밀번호
 
 Click the *Root Password* field under *User Settings* to launch the *Root Password* task screen.
 
@@ -214,7 +214,7 @@ Enter the same password again in the *Confirm* text box.
 Click <kbd>Done</kbd>.
 
 
-#### User Creation
+#### 사용자 생성
 
 Next click the *User Creation* field under *User Settings* to launch the *Create User* task screen. This task area allows you to create a privileged or non-privileged (non-administrative) user account on the system.
 
@@ -247,12 +247,12 @@ Checked
 
 Click <kbd>Done</kbd>.
 
-## Installer Phase
+## 설치 장
 
 Once you are satisfied with your choices for the various installation tasks, the next phase of the installation process will begin the installation proper.
 
 
-### Start the Installation
+### 설치 시작하기
 
 Once you are satisfied with your choices for the various installation tasks, click the <kbd>Begin Installation</kbd> button on the main *Installation Summary* screen.
 
@@ -262,13 +262,13 @@ The installation will begin, and the installer will show the progress of the ins
 
     If you do not wish to continue after clicking the Begin Installation button, you can still safely back out of the installation without any loss of data. To quit the installer, simply reset your system either by clicking the Quit button, pressing ctrl-alt-del on the keyboard, or pushing the reset or power switch.
 
-### Complete the Installation
+### 설치 완료하기
 
 After the installer has run its course, you will be presented with a final installation progress screen with a complete message.
 
 Finally, complete the entire procedure by clicking the <kbd>Reboot System</kbd> button. The system will restart.
 
-### Log In
+### 접속하기
 
 The system is now set up and ready for use. You will see the Rocky Linux console.
 
